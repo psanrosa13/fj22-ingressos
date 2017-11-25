@@ -29,7 +29,6 @@ public class SessaoForm {
 	public Sessao toSessao(SalaDao salaDao, FilmeDao filmeDao){
 		Sala sala = salaDao.findOne(salaId);
 		Filme filme = filmeDao.findOne(filmeId);
-		
 		Sessao sessao = new Sessao(sala,filme, horario);
 		sessao.setId(id);
 		
